@@ -1,0 +1,10 @@
+
+1. Currency Standardization: convert all currency to USD
+2. Type, Pf_type, Country_Code vectorization: Convert String into numeric value which makes easy in comparision
+3. Indicator_code, Hedge_value, Status: Lots of NANs So deleted entire coloumn
+4. Desk_id, Office_id, Pf_id: droped as they are only used in identification
+5. Normalization: mean, Standard Deviation normalization is done
+   idea is to construct 0 mean with unit SD dataset
+
+6. **As the data has high variance before normalization the best approach is to move with Gradient Boosting algorithm for regression**
+

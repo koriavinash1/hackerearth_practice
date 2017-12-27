@@ -1,0 +1,11 @@
+
+1. Currency Standardization: convert all currency to USD
+2. Type, Pf_type, Country_Code vectorization: Convert String into numeric value which makes easy in comparison
+3. Indicator_code, Hedge_value, Status: Lots of NANs So deleted entire column
+4. Desk_id, Office_id, Pf_id: dropped as they are only used in identification
+5. Normalization: mean, Standard Deviation normalization is done
+   idea is to construct 0 mean with unit SD dataset
+
+6. **As the data has high variance before normalization the best approach is to move with Gradient Boosting algorithm for regression**
+7. Based on few experiments the best depth is 4, So it was used
+8. Final model MAE: 0.0032

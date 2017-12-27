@@ -1,0 +1,10 @@
+
+1. Transaction_id: dropped as they are only used in identification
+2. It's hard to consider cat_var_1 to cat_var_18 as vectorization id problem and inconsistent 
+3. Normalization: mean, Standard Deviation normalization is done
+   idea is to construct 0 mean with unit SD dataset.
+   As the values were very close to 0 this normalization helps in bringing all values to same range of values
+
+4. **As the data has high variance before normalization the best approach is to move with Gradient Boosting algorithm for regression**
+5. Based on few experiments the best depth is 16, So it was used
+6. Final model MAE: 0.1257
